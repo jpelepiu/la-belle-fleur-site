@@ -1,1 +1,76 @@
 !
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+<meta charset="width=device-width",
+intial-scale="1.0">
+<title> La Belle Fleur - Floricultura</title>
+</style>
+/* Estilo em tons rosa e verde pastel */ 
+ body {
+        font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: F5F5F5; /* Fundo claro */
+         color: #333; / * Texto escuro para boa leitura
+ */ 
+      }
+
+      header {
+        background-color: #98FB98; /* Verde pastel */
+         color: white; 
+         text-align: center; 
+         padding: 20px;
+      }
+
+      nav {
+           background-color: #FFB6C1; /* Rosa pastel */
+           text-align: center; 
+           padding: 10px 0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; 
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px
+      }
+     
+      nav ul li a {
+        text-decoration: none;
+        color: white
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #006400; /* Verde mais escuro ao passar 
+        o mouse */ 
+      }
+
+      <section> {
+        padding: 20px;
+    text-align: center;
+     }
+
+     .produtos {
+        display: flex;
+        justify-content: center;
+        flex_wrap: wrap;
+        gap: 20px;
+     }
+
+     .produtos{
+        background-color: #FFF;
+        border: 2px solid #FFB6C1
+        border-radius: 10px;
+        width: 220px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1)
+     }
+</meta>
+    </head>
+</html>
