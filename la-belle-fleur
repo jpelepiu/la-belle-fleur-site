@@ -1,32 +1,31 @@
-!
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-<meta charset="width=device-width",
-intial-scale="1.0">
-<title> La Belle Fleur - Floricultura</title>
-</style>
-/* Estilo em tons rosa e verde pastel */ 
- body {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Belle Fleur - Floricultura</title>
+    
+    <style>
+      /* Estilo em tons rosa e verde pastel */ 
+      body {
         font-family: Arial, sans-serif;
-         margin: 0;
-         padding: 0;
-         background-color: F5F5F5; /* Fundo claro */
-         color: #333; / * Texto escuro para boa leitura
- */ 
+        margin: 0;
+        padding: 0;
+        background-color: #F5F5F5; /* Fundo claro */
+        color: #333; /* Texto escuro para boa leitura */ 
       }
 
       header {
         background-color: #98FB98; /* Verde pastel */
-         color: white; 
-         text-align: center; 
-         padding: 20px;
+        color: white; 
+        text-align: center; 
+        padding: 20px;
       }
 
       nav {
-           background-color: #FFB6C1; /* Rosa pastel */
-           text-align: center; 
-           padding: 10px 0;
+        background-color: #FFB6C1; /* Rosa pastel */
+        text-align: center; 
+        padding: 10px 0;
       }
 
       nav ul {
@@ -37,105 +36,93 @@ intial-scale="1.0">
 
       nav ul li {
         display: inline;
-        margin: 0 15px
+        margin: 0 15px;
       }
      
       nav ul li a {
         text-decoration: none;
-        color: white
+        color: white;
         font-weight: bold;
       }
 
       nav ul li a:hover {
-        color: #006400; /* Verde mais escuro ao passar 
-        o mouse */ 
+        color: #006400; /* Verde mais escuro ao passar o mouse */ 
       }
 
-      <section> {
+      section { /* Removi os < > que estavam aqui */
         padding: 20px;
-    text-align: center;
-     }
+        text-align: center;
+      }
 
-     .produtos {
+      .produtos {
         display: flex;
         justify-content: center;
-        flex_wrap: wrap;
+        flex-wrap: wrap; /* Corrigido: era flex_wrap */
         gap: 20px;
-     }
+      }
 
-     .produtos{
+      .produto { /* Corrigido: era .produtos repetido */
         background-color: #FFF;
-        border: 2px solid #FFB6C1
+        border: 2px solid #FFB6C1; /* Corrigido: faltava ; */
         border-radius: 10px;
         width: 220px;
         padding: 15px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1)
-     }
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Corrigido: faltava ; */
+      }
 
-     .produtos img {
-      width: 100%;
-      border-radius: 10px;
-     }
+      .produto img {
+        width: 100%;
+        border-radius: 10px;
+      }
 
-     footer {
-      background-color: #98FB98;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-
-     }
-  </style>
+      footer {
+        background-color: #98FB98;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
 </head>
 <body>
 
-<header>
-      <h1> La Belle Fleur </h1>
-      <p> A beleza das flores para todos os momentos</p>
-   </header>
+    <header>
+      <h1>La Belle Fleur</h1>
+      <p>A beleza das flores para todos os momentos</p>
+    </header>
 
-      <nav>
-         <ul>
-             <li><a href="# ">inicio</a></li>
-             <li><a href="# ">catalogo</a></li>
-             <li><a href="# ">sobre nos</a><li>
-             <li><a href="# ">contato</a></li>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Sobre Nós</a></li> <li><a href="#">Contato</a></li>
         </ul>
-      </nav>
+    </nav>
 
-      <section>
-          <h2>nossos arranjos</h2>
-           <div class="produtos">
-             <div class="produto">
-                <img src="https://i.imgur.com/n5RkGzG.jpg"
-      alt="Rosas Vermelhas">
-                     <h3>Rosas Vermelhas</h3>
-                     <p>Elegância e amor em cada pétala.</p>
-                 </div>
-                 <div class="produto">
-                    <img src="https://i.imgur.com/s8DmuqJ.jpg"
-        alt="Lírios Brancos">
-                      <h3>Lírios Brancos</h3> 
-                      <p>Perfeitos para transmitir paz e 
-   pureza.</p>
-              </div> 
-            div class="produto">
-              <img src="https://i.imgur.com/x4HwgCT.jpg"
-    alt="Girassóis">
-                  <h3>Girassóis</h3>
-                  <p>Flores radiantes que iluminam qualquer
-    ambiente.</p>
-             </div>
+    <section>
+        <h2>Nossos Arranjos</h2>
+        <div class="produtos">
+            <div class="produto">
+                <img src="https://i.imgur.com/n5RkGzG.jpg" alt="Rosas Vermelhas">
+                <h3>Rosas Vermelhas</h3>
+                <p>Elegância e amor em cada pétala.</p>
             </div>
-       </section>
+            <div class="produto">
+                <img src="https://i.imgur.com/s8DmuqJ.jpg" alt="Lírios Brancos">
+                <h3>Lírios Brancos</h3> 
+                <p>Perfeitos para transmitir paz e pureza.</p>
+            </div> 
+            <div class="produto">
+                <img src="https://i.imgur.com/x4HwgCT.jpg" alt="Girassóis">
+                <h3>Girassóis</h3>
+                <p>Flores radiantes que iluminam qualquer ambiente.</p>
+            </div>
+        </div>
+    </section>
 
-       <footer>
-         <p>© 2025 La Belle Fleur | Feito com amor e flores
-      </p> 
+    <footer>
+        <p>© 2025 La Belle Fleur | Feito com amor e flores</p> 
     </footer>
 
-    </body>
-    </html>
-</meta>
-    </head>
+</body>
 </html>
